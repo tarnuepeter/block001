@@ -5,6 +5,5 @@ from .models import *
 def index(request):
     return render(request, 'blog-app/index.html')
 
-
-def readmore(request):
-    return request(request, 'blog-app/readmore.html')
+def read_detail(request):
+    return render(request, 'blog-app/readmore.html')
