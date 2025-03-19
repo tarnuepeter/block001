@@ -15,5 +15,6 @@ def index(request):
 
 def read_detail(request, slug):
     post = Post.objects.get(slug=slug)
-    context_d = {'post': post}
+    comment = Post.comment_set.all()
+    context_d = {'post': post, 'comment':comment}
     return render(request, 'blog-app/readmore.html', context_d)
