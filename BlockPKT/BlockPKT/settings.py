@@ -78,6 +78,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        # "Name": "blog_db",
+        # "User": "root",
+        # "Password": "Kollie2014@",
+        # "Port": 3306
     }
 }
 
@@ -118,6 +122,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES = [BASE_DIR/"static"]
+
+MEDIA_URL = "/image/"
+MEDIA_ROOT = BASE_DIR/"static/image"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
