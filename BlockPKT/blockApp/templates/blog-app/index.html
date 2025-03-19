@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <!-- Nested row for non-featured blog posts-->
-                <div class="row">
+                <div class="row"> 
                     {% for post in posts  %}
                     <div class="col-lg-6">
                         <!-- Blog post-->
@@ -41,7 +41,7 @@
                                 <p class="card-text">
                                     {{ post.body | truncatechars:"200" }}
                                 </p>
-                                <a class="btn btn-primary" href="{% url 'read-detail' trendingPost.slug %}">Read more →</a>
+                                <a class="btn btn-primary" href="{% url 'read-detail' post.slug %}">Read more →</a>
                             </div>
                         </div>
                        
